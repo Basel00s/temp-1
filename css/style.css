@@ -1,8 +1,13 @@
 body{
     font-family: "work sans", sans-serif;
 }
+:root{
+    --main-color:#10cab7;
+}
 *{
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 .container{
     padding-left: 15px;
@@ -12,9 +17,11 @@ body{
     width: 600px;
     
 }
+
 /*start nav-bar*/
-.nav-bar{
+.navbar{
     padding: 20px;
+    background-color: white;
     
 
 }
@@ -111,3 +118,30 @@ body{
 }
 
 /*end nav-bar*/
+/*start landing-section*/
+.landing-bage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+}
+.landing-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    width: 350px;
+    max-width: 100%;
+}
+.landing-content h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+}
+.landing-content p{
+    
+    font-size: 19px;
+}
+/*end landing-section*/
